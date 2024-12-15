@@ -6,12 +6,13 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./Layout/MainLayout.jsx";
 import Homepage from "./pages/home/Homepage.jsx";
-import CoursePage from "./pages/course/CoursePage..jsx";
-import PricePage from "./pages/price/PricePage.jsx";
+
 import Contact from "./pages/aboutUs/contact.jsx";
 import SignInPage from "./pages/auth/SignInPage.jsx";
 import Register from "./pages/auth/Register.jsx";
 import ChatBot from "./pages/chatbot/ChatBot.jsx";
+import ExperiencePage from "./pages/experience/ExperiencePage.jsx";
+import ProjectPage from "./pages/project/ProjectPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,12 +28,12 @@ const router = createBrowserRouter([
         element: <Homepage />,
       },
       {
-        path: "/course",
-        element: <CoursePage />,
+        path: "/experience",
+        element: <ExperiencePage />,
       },
       {
-        path: "/price",
-        element: <PricePage />,
+        path: "/project",
+        element: <ProjectPage />,
       },
       {
         path: "/about",

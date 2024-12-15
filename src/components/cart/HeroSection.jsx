@@ -24,7 +24,7 @@ const HeroSection = () => {
 
   return (
     <SkeletonTheme color="#e0e0e0" highlightColor="#f5f5f5">
-      <div className="flex justify-center px-4 ">
+      <div className="text-left px-4 ">
         <div className="text-left max-w-[510px] w-full">
           {loading ? (
             <>
@@ -38,15 +38,18 @@ const HeroSection = () => {
             </>
           ) : (
             <>
+              <div className="text-4xl font-bold  text-[#0E302F] ">
+                Hello, I am
+              </div>
               {/* Slide-in animation for title */}
               <motion.h1
-                className="font-bold text-4xl text-[#FFB600]"
+                className="font-bold text-4xl py-2 text-[#FFB600]"
                 variants={slideInFromLeft}
                 initial="hidden"
                 animate="visible"
               >
                 <ReactTyped
-                  strings={[t("Welcome to our website")]}
+                  strings={[t("Khann Teymeta")]}
                   typeSpeed={100}
                   loop
                   className="text-4xl max-[800px]:text-3xl max-[400px]:text-2xl max-[320px]:text-xl "
@@ -58,9 +61,9 @@ const HeroSection = () => {
                 initial="hidden"
                 animate="visible"
               >
-                <p className="sm:text-[18px] md:text-[18px] mt-[20px] lg:text-[18px] break-words">
+                <p className="sm:text-[18px] md:text-[18px] mt-[16px] lg:text-[18px] break-words">
                   {t(
-                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, non. dolor sit amet consectetur adipisicing elit. Iure, non."
+                    "Ambitious third-year Software Development student at Norton University, with a strong foundation in programming languages such as software development."
                   )}
                 </p>
               </motion.div>

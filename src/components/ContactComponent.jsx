@@ -1,1 +1,8 @@
-export function ContactComponent() {}
+export function ContactComponent() {
+    return (
+        <>
+        
+        </>
+    );
+    
+}
