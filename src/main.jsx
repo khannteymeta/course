@@ -7,7 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./Layout/MainLayout.jsx";
 import Homepage from "./pages/home/Homepage.jsx";
 
-import Contact from "./pages/aboutUs/contact.jsx";
+import Contact from "./pages/aboutUs/Contact.jsx";
 import SignInPage from "./pages/auth/SignInPage.jsx";
 import Register from "./pages/auth/Register.jsx";
 import ChatBot from "./pages/chatbot/ChatBot.jsx";
