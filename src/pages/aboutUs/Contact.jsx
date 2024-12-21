@@ -1,4 +1,3 @@
-import { ContactComponent } from "../../components/ContactComponent";
 import { motion } from "framer-motion";
 import image from "D:/course-website/course/src/assets/logo/meta.png";
 import page from "D:/course-website/course/src/assets/logo/page.png";
@@ -85,8 +84,6 @@ export default function Contact() {
           </h1>
         </motion.h1>
         <div></div>
-
-        <ContactComponent />
       </div>
     </>
   );
