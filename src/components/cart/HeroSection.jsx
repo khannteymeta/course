@@ -24,26 +24,25 @@ const HeroSection = () => {
 
   return (
     <SkeletonTheme color="#e0e0e0" highlightColor="#f5f5f5">
-      <div className="text-left px-4 ">
-        <div className="text-left max-w-[510px] w-full">
+      <div className="text-left px-4 md:px-0">
+        <div className="max-w-[510px] w-full mx-auto">
           {loading ? (
             <>
-              {/* Static Skeleton Loader */}
               <div className="font-bold text-4xl text-[#FFB600]">
                 <Skeleton height={40} width={300} borderRadius={20} />
               </div>
-              <div className="mt-[20px]">
+              <div className="mt-4">
                 <Skeleton count={2} borderRadius={20} />
               </div>
             </>
           ) : (
             <>
-              <div className="text-4xl font-bold  text-[#0E302F] ">
+              <div className="text-4xl  font-bold text-[#0E302F] max-[400px]:text-2xl">
                 Hello, I am
               </div>
-              {/* Slide-in animation for title */}
+
               <motion.h1
-                className="font-bold text-4xl py-2 text-[#FFB600]"
+                className="font-bold text-4xl py-2 text-[#FFB600] max-[400px]:text-2xl"
                 variants={slideInFromLeft}
                 initial="hidden"
                 animate="visible"
@@ -52,18 +51,19 @@ const HeroSection = () => {
                   strings={[t("Khann Teymeta")]}
                   typeSpeed={100}
                   loop
-                  className="text-4xl max-[800px]:text-3xl max-[400px]:text-2xl max-[320px]:text-xl "
+                  className="text-4xl max-[800px]:text-3xl max-[400px]:text-2xl"
                 />
               </motion.h1>
+
               <motion.div
-                className="mt-[20px]"
+                className="mt-4 max-[400px]:mt-2"
                 variants={slideInFromLeft}
                 initial="hidden"
                 animate="visible"
               >
-                <p className="sm:text-[18px] md:text-[18px] mt-[16px] lg:text-[18px] break-words">
+                <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] leading-relaxed">
                   {t(
-                    "Ambitious third-year Software Development student at Norton University, with a strong foundation in programming languages such as software development."
+                    "Ambitious third-year Software Development student at Norton University, with a strong foundation in UX/UI and Programming language."
                   )}
                 </p>
               </motion.div>

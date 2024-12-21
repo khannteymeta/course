@@ -70,10 +70,21 @@ export default function Contact() {
 
         <div className="flex justify-center">
           <h2 className="text-sm text-center w-[300px]  mt-4">
-            I'm currently start with it because I want to explore and make
+            I`m currently start with it because I want to explore and make
             confidance infront of Camera and Ordience. Here is my new page
           </h2>
         </div>
+
+        <motion.h1
+          variants={slideInFromLeft}
+          initial="hidden"
+          animate="visible"
+        >
+          <h1 className="text-2xl text-center mt-5 text-[#0E302F]  font-thin">
+            Education
+          </h1>
+        </motion.h1>
+        <div></div>
 
         <ContactComponent />
       </div>
