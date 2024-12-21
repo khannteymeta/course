@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import project from "D:/course-website/course/src/assets/logo/project.svg";
+import project from "D:/Course-website/course/public/project.svg";
 
 const slideInFromLeft = {
   hidden: { opacity: 0, x: -100 },
