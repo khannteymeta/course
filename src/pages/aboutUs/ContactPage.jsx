@@ -12,7 +12,7 @@ const slideInFromRight = {
   visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
 };
 
-export default function Contact() {
+export default function ContactPage() {
   return (
     <>
       <div className="">

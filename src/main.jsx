@@ -5,9 +5,10 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./Layout/MainLayout.jsx";
 import Homepage from "./pages/home/Homepage.jsx";
-import Contact from "./pages/aboutUs/Contact.jsx";
+
 import ExperiencePage from "./pages/experience/ExperiencePage.jsx";
 import ProjectPage from "./pages/project/ProjectPage.jsx";
+import ContactPage from "./pages/aboutUs/ContactPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <Contact />,
+        element: <ContactPage />,
       },
     ],
   },
