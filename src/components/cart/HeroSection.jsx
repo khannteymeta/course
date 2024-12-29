@@ -63,7 +63,7 @@ const HeroSection = () => {
               >
                 <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] leading-relaxed">
                   {t(
-                    "Ambitious third-year Software Development student at Norton University, with a strong foundation in UX/UI and Programming language."
+                    "Ambitious Third-Years Software Development student at Norton University, with a strong foundation in UX/UI and Programming language."
                   )}
                 </p>
               </motion.div>
